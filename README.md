@@ -1,12 +1,15 @@
 # Walle.WinUsb
 
+[![badge](https://github.com/walle-work/Walle.WinUsb/workflows/dotNetStandard/badge.svg)](https://github.com/walle-work/Walle.WinUsb/actions/)
+[![NuGet Badge](https://buildstats.info/nuget/Walle.WinUsb)](https://www.nuget.org/packages/Walle.WinUsb/)
+
 ```shell
 dotnet add package Walle.WinUsb
 ```
 
 ## WinUsbDeviceWatcher Class
 
-- Provider Usb Insert/Remove Events
+- Provider Usb Insert/Remove Events.
 - Include Usb device  information such as PID, VID and Path etc.
 
 ```csharp
@@ -62,7 +65,8 @@ namespace Walle.WinUsb.Sample
 ```
 
 ```shell
-WinUsbDevice Sample:
+WinUsbDevice.GetAll() Result:
+
 \\?\usb#vid_0a12&pid_0001#5&2f03355&0&6#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
 \\?\usb#vid_413c&pid_2113#6&1bfb9409&0&4#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
 \\?\usb#vid_0b95&pid_772b#596c08#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
@@ -80,7 +84,8 @@ namespace Walle.WinUsb.Sample
     {
         static void Main(string[] args)
         {
-            //if target usb printer path:\\?\usb#vid_413c&pid_2113#6&1bfb9409&0&4#{a5dcbf10-6530-11d2-901f-00c04fb951ed}        
+            //if target usb printer path:
+            //\\?\usb#vid_413c&pid_2113#6&1bfb9409&0&4#{a5dcbf10-6530-11d2-901f-00c04fb951ed}        
             var connected = WinUsbDevice.Instance.Open("413c", "2113");
             if (connected)
             {
