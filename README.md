@@ -1,7 +1,8 @@
 # Walle.WinUsb
 
-[![badge](https://github.com/walle-work/Walle.WinUsb/workflows/dotNetStandard/badge.svg)](https://github.com/walle-work/Walle.WinUsb/actions/)
 [![NuGet Badge](https://buildstats.info/nuget/Walle.WinUsb)](https://www.nuget.org/packages/Walle.WinUsb/)
+[![dotNetStandard](https://github.com/walle-work/Walle.WinUsb/actions/workflows/NetStandard.yml/badge.svg)](https://github.com/walle-work/Walle.WinUsb/actions/workflows/NetStandard.yml)
+
 
 ```shell
 dotnet add package Walle.WinUsb
